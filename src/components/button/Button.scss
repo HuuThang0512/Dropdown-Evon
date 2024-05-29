@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: 20px 30px;
+  background-color: #00bfff;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin: 10px;
+  width: 240px;
+  &--secondary {
+    background-color: #fff;
+    border: 1px solid #00bfff;
+    color: #00bfff;
+  }
+}
