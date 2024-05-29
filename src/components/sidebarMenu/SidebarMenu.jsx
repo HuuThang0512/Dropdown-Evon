@@ -5,7 +5,7 @@ import useClickOutSide from '../../hooks/useClickOutSide';
 const SidebarMenu = () => {
     const { nodeRef, show, setShow } = useClickOutSide();
     return (
-        <div className=''>
+        <div className='text-blue'>
             Menu
         </div>
     );
