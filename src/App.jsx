@@ -2,14 +2,24 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./App.scss";
-import useLinkNewTab from "./hooks/useLinkNewTab";
-import Dropdown from "./components/dropdown/Dropdown";
+import { CountProvider, useCount } from "./contexts/countContext";
+import { GalleryProvider } from "./contexts/gallery-context";
+import Gallery from "./components/gallery/PhotoList";
+import PhotoList from "./components/gallery/PhotoList";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import BlogPage from "./components/BlogPage";
+import ProfilePage from "./components/ProfilePage";
 
 const App = () => {
   return (
-    <div>
-      {/* <div className=" bg-gray-300">Test</div> */}
-      <Dropdown></Dropdown>
+    <div className="">
+      <Nav></Nav>
+      <Routes>
+        <Route path="/" element={<>Home Page</>}></Route>
+        <Route path="/blog" element={<BlogPage></BlogPage>}></Route>
+        <Route path="/profile" element={<ProfilePage></ProfilePage>}></Route>
+      </Routes>
     </div>
   );
 };
