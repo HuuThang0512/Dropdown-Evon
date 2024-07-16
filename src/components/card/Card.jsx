@@ -3,7 +3,7 @@ import React from "react";
 
 const Card = () => {
   return (
-    <div className="relative rounded-lg w-[400px]">
+    <div className="relative relative rounded-lg w-[400px]">
       <img
         className="object-cover w-full rounded-lg aspect-square"
         src="https://cdn.dribbble.com/users/2400293/screenshots/16630840/media/ed6af0d38d460ff9ee426ad69e6435ea.png?resize=1600x1200&vertical=center"
